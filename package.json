@@ -1,0 +1,40 @@
+{
+  "name": "bower-jquery",
+  "title": "jQuery",
+  "description": "jquery installed from bower, that's been browserified tested - jQuery JavaScript Library 
+http://jquery.com/",
+  "version": "2.0.3",
+  "main": "index.js",
+  "private": true,
+  "engines": {
+    "node": ">=0.10.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:yawetse/bower-jquery.git"
+  },
+  "scripts": {
+    "test": "mocha -R spec --recursive"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "1.5.0",
+    "grunt": "0.4.1",
+    "grunt-contrib-jshint": "0.4.3",
+    "grunt-simple-mocha": "0.4.0",
+    "grunt-jsbeautifier": "0.1.7",
+    "mocha": "1.9.0"
+  },
+  "keywords": [
+    "jQuery",
+    "bower",
+    "package",
+    "library",
+    "DOM"
+  ],
+  "directories": {
+    "test": "test"
+  },
+  "author": "",
+  "license": "BSD-2-Clause"
+}

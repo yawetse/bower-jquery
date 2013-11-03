@@ -1,4 +1,3 @@
-bower-jquery
-============
+# bower-jquery
 
-jQuery JavaScript Library  http://jquery.com/
+jquery installed from bower, that's been browserified test
