@@ -1,40 +1,38 @@
 {
-  "name": "bower-jquery",
-  "title": "jQuery",
-  "description": "jquery installed from bower, that's been browserified tested - jQuery JavaScript Library 
-http://jquery.com/",
-  "version": "2.0.3",
+  "title":"NPMD jQuery",
+  "name": "npmd-jquery",
+  "version": "2.0.2",
+  "description": "Install jQuery from bower into a node app via npm. jQuery JavaScript Library ",
   "main": "index.js",
-  "private": true,
-  "engines": {
-    "node": ">=0.10.x"
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "install": "grunt copy",
+    "uninstall": "grunt clean",
+    "test": "mocha -R spec --recursive"
+  },
+  "dependencies": {
+    "grunt": "0.4.1",
+    "grunt-contrib-copy": "0.4.1",
+    "grunt-contrib-clean": "~0.5.0"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:yawetse/bower-jquery.git"
-  },
-  "scripts": {
-    "test": "mocha -R spec --recursive"
-  },
-  "dependencies": {},
-  "devDependencies": {
-    "chai": "1.5.0",
-    "grunt": "0.4.1",
-    "grunt-contrib-jshint": "0.4.3",
-    "grunt-simple-mocha": "0.4.0",
-    "grunt-jsbeautifier": "0.1.7",
-    "mocha": "1.9.0"
+    "url": "git://github.com/yawetse/bower-jquery.git"
   },
   "keywords": [
     "jQuery",
     "bower",
     "package",
     "library",
-    "DOM"
+    "DOM",
+    "npmd",
+    "node asset"
   ],
-  "directories": {
-    "test": "test"
-  },
-  "author": "",
-  "license": "BSD-2-Clause"
+  "author": "Yaw Joseph Etse",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/yawetse/bower-jquery/issues"
+  }
 }

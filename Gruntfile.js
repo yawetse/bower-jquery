@@ -1,5 +1,5 @@
 /*
- * bower-jquery
+ * npmd-jquery
  * http://github.amexpub.com/modules/bower-jquery
  *
  * Copyright (c) 2013 Amex Pub. All rights reserved.
@@ -52,12 +52,22 @@ module.exports = function(grunt) {
         'routes/**/*.js',
         'test/**/*.js'
       ]
-    }
+    },
+    copy: {
+      main: {
+        files: [
+          {expand: true,cwd: 'bower_components/jquery/', src: ['**'], dest: '../../public/node_assets/jquery/'},
+        ]
+      }
+    },
+    clean: ['../../public/node_assets/jquery/']
   });
 
   grunt.loadNpmTasks('grunt-simple-mocha');
   grunt.loadNpmTasks('grunt-jsbeautifier');
   grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-contrib-copy');
 
   grunt.registerTask('default', ['jshint', 'simplemocha']);
   grunt.registerTask('lint', 'jshint');
